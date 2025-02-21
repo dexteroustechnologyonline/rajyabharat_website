@@ -1,0 +1,240 @@
+/* SocialLinks.module.css */
+.socialLinks {
+    text-align: right;
+  }
+  
+  .socialIcon {
+    font-size: 15px;
+    margin: 2px;
+    color: rgba(255, 255, 255, 0.714); /* Default icon color */
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .facebook:hover {
+    color: #1877F2; /* Facebook Blue */
+  }
+  
+  .twitter:hover {
+    color: #1DA1F2; /* Twitter Blue */
+  }
+  
+  .google:hover {
+    color: #DB4437; /* Google Red */
+  }
+  
+  .instagram:hover {
+    color: #E4405F; /* Instagram Pink */
+  }
+  
+  .youtube:hover {
+    color: #FF0000; /* YouTube Red */
+  }
+  
+  .textRight {
+    text-align: right !important;
+    text-align: -webkit-right;
+  }
+
+  /* Navbar.module.css */
+.navbarCenter {
+    display: flex;
+    justify-content: right; /* Centers items horizontally */
+    align-items: center; /* Aligns items vertically */
+    text-align: right;
+    width: 100%;
+  }
+  
+  .navItem {
+    margin: 0 10px; /* Adds spacing between items */
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navItem:hover {
+    color: #007bff; /* Changes color on hover (Bootstrap Primary Blue) */
+  }
+  
+  .navbarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .navItemText {
+    color: rgba(255, 255, 255, 0.714) !important; /* Keeps text white */
+    font-size: 16px; /* Adjust size for readability */
+    font-weight: 600; /* Slightly bolder */
+    letter-spacing: 0.5px; /* Improves spacing */
+    text-transform: capitalize; /* Makes text more readable */
+    transition: color 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .navItemText:hover {
+    color: #ff0303 !important; 
+    /* text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6); */
+  }
+
+  /* Navbar container */
+.utf_main_nav_area {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent navbar */
+  padding: 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar brand */
+.navbar-brand img {
+  height: 50px; 
+  width: auto;
+}
+
+/* Navbar links */
+.navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: white !important;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #facc15 !important; /* Warm yellow hover effect */
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+}
+
+/* Navbar toggler (Mobile) */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background: url("/menu-icon.svg") no-repeat center;
+  background-size: contain;
+}
+
+/* Search Icon */
+.utf_nav_search i {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.utf_nav_search i:hover {
+  color: #facc15;
+}
+
+/* Search Box */
+.utf_search_block {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.utf_search_block input {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 250px;
+  border-radius: 4px;
+}
+
+/* Close button */
+.utf_search_close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  color: red;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
+  backdrop-filter: blur(8px); /* Frosted glass effect */
+  padding: 12px 0;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Navbar Brand */
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navbar Links */
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffdd57; /* Yellow on hover */
+}
+
+/* Dropdown Menu */
+.navbar .dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .dropdown-item {
+  color: #333;
+  font-weight: 500;
+  padding: 8px 15px;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Mobile Toggle Button */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Close Button */
+.navbar-toggler h4 {
+  margin: 0;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler:hover h4 {
+  transform: rotate(90deg);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .navbar {
+    background: rgba(0, 123, 255, 0.95); /* Slightly more opaque on mobile */
+  }
+
+  .navbar .navbar-collapse {
+    background: rgba(0, 123, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar .nav-link {
+    color: white !important;
+  }
+}
+  
